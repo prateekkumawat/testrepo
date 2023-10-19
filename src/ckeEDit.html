@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WYSIWYG Editor</title>
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+  </head>
+  <body>
+    <p>asdas</p>
+    <div id="editor"></div>
+    <script>
+      // Initialize the CKEditor editor.
+      var editor = CKEDITOR.replace('editor');
+
+      // Add custom HTML elements to the editor.
+      editor.config.extraPlugins = 'datepicker,radiobutton,checkbox';
+
+      // Render the HTML.
+      editor.on('instanceReady', function () {
+        editor.render();
+      });
+    </script>
+  </body>
+</html>

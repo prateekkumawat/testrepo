@@ -1,0 +1,15 @@
+.toolbar {
+  background-color: lightgray;
+  border-radius: 30px;
+  display: flex;
+  margin: auto;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+  span {
+    font-size: 1.5em;
+  }
+  .group {
+    margin: 0 10px;
+  }
+}
