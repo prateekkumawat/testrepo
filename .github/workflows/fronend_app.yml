@@ -24,3 +24,6 @@ jobs:
 
       - name: Building project
         run: npm run build
+
+      - name: Running project
+        run: npm run dev -- --host
