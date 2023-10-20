@@ -26,4 +26,4 @@ jobs:
         run: npm run build
 
       - name: Running project
-        run: npm run dev -- --host
+        run: npm run dev -- --host &
