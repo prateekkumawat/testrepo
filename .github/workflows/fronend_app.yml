@@ -25,5 +25,6 @@ jobs:
       - name: Building project
         run: npm run build
 
-      - name: Running project
-        run: npm run dev --host &
+      - name: move build to production path
+        run: sudo cp -r $GITHUB_WORKSPACE/build/* /var/www/html/
+         
