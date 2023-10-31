@@ -18,7 +18,7 @@ jobs:
         uses: MathieuSoysal/replace-string-in-file@v1.0.0
         with:
           file: .env.example
-          old-string: URL
+          old-string: url
           new-string: ${{ vars.BEURL }}
         
          
