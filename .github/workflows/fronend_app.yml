@@ -19,6 +19,6 @@ jobs:
         with:
           file: .env.example
           old-string: URL
-          new-string: ${{ env.BEURL }}
+          new-string: ${{ vars.BEURL }}
         
          
