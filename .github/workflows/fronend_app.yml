@@ -19,7 +19,7 @@ jobs:
         with:
           file: .env.example
           old-string: URL
-          new-string: ${{ BEURL }}
+          new-string: ${{ env.BEURL }}
       - name: Replace value
         run: | 
           sed -i "s/ /$BEURL/g" $GITHUB_WORKSPACE/.env.example
