@@ -13,18 +13,5 @@ jobs:
     steps:
       - name: Checkout code 
         uses: actions/checkout@v2
-
-      - name: Installing Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 18.16.1
-
-      - name: Installing NPM packages
-        run: npm ci
-
-      - name: Building project
-        run: npm run build
-
-      - name: move build to production path
-        run: sudo cp -r $GITHUB_WORKSPACE/dist/* /var/www/html/
+        
          
